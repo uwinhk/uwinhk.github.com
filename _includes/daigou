@@ -1,0 +1,10 @@
+<ul>
+{% for item in site.pages %}
+  {% if item.category == 'brand' %}
+    <li>
+      <img class="itemimg" src="{{site.url}}{{item.img}}"/>
+      <div>{{item.color}} | {{item.detail}} | {{item.title}}</div>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>

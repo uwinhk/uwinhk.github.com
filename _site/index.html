@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+  <head>
+	<title>You win the world ! </title>
+		  
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=640" />
+  
+  <!-- stylesheet -->
+	<link rel="stylesheet" href="/assets/css/font-awesome-ie7.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+  <link rel="stylesheet" href="/assets/css/styleuwin.css"/>
+  
+  <!-- javascript -->
+  <script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+  <!-- weibo -->  
+  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+  <!-- slideshow -->
+  <script type="text/javascript">
+	var scrollSpeed = 15;
+	var current = 0;
+	var direction = 'h';
+	function bgscroll(){
+	    current -= 1;
+	    $('div.slideshow').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");   
+	    }
+	setInterval("bgscroll()", scrollSpeed);
+	</script>
+  </head>
+  
+  <body onload="StartMove()">
+    <header>
+      <img src="/assets/images/uwinheader2.png" width="980px"/>
+
+    <ul id="language">
+      <li><a href="/index.html" id="chinese_selector"> chinese </a></li>
+      <li><a href="/en/index.html"> english </a></li>
+    </ul>
+    <ul id="menu">
+      <li><a href="/">首  页</a></li>
+      <li><a href="/study-fr.html">法国留学</a></li>
+      <li><a href="http://uwinhk.github.com/travel-fr.html">法国旅游</a></li>
+      <li><a href="/study-sg.html">新加坡留学/移民</a></li>
+      <li><a href="/invest-sg.html">新加坡房产</a></li>
+      <li><a href="/travel-sg.html">新加坡旅游</a></li>
+      <li><a href="/study-mal.html">马来西亚留学/移民</a></li>
+      <li><a href="/invest-mal.html">马来西亚房产</a></li>
+      <li><a href="/travel-mal.html">马来西亚旅游</a></li>
+      <li><a href="/board.html">论  坛</a></li>
+  </ul>
+
+  
+    </header>
+    
+    <div id="container">
+      <!-- Latest update -->
+<section id="sec_update" class="clearfix">
+  
+    <div class="updates" id="latest_updates">
+      <ul class="update_study"> <h3 class="cn"><i class="icon-pencil"></i> 留学动向最新更新</h3>      
+        
+          
+            
+              <li><a href="/blog/2012/10/21/%E6%B3%95%E5%9B%BD%E7%9A%84%E9%AB%98%E7%AD%89%E5%95%86%E4%B8%9A%E4%B8%8E%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2%E4%BB%8B%E7%BB%8D.html">12-10-21 <i class="icon-comment-alt"></i> 法国的高等商业与管理学院介绍</a></li>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <li><a href="/blog/2012/09/27/2012-singapore-study-abroad.html">12-09-27 <i class="icon-comment-alt"></i> 新加坡留学 专家预测2013年最具潜力专业!</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/blog/2012/09/20/study-fr1.html">12-09-20 <i class="icon-comment-alt"></i> fr-study 1</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/blog/2012/07/02/singapore.html">12-07-02 <i class="icon-comment-alt"></i> Singapore</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/blog/2012/07/02/france-test.html">12-07-02 <i class="icon-comment-alt"></i> 2013法国留学新动向</a></li>
+            
+          
+        
+      </ul>
+      <ul class="update_travel"> <h3 class="cn"><i class="icon-plane"></i> 旅游指南最新更新</h3>       
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+
+    <div class="updates" id="social_block">
+      <div id="sns">
+        <ul>
+          <li class="qq"><a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=547f9bb017831f96d12d1ce5fb9f0b562e05d84959b8fac9"><img src="/assets/images/qq.png"></a></li>
+          <li class="msn"><script type="text/javascript" src="http://settings.messenger.live.com/controls/1.0/PresenceButton.js"></script>
+          <div
+            id="Microsoft_Live_Messenger_PresenceButton_54d1e3d385733162"
+            msgr:width="48"
+            msgr:backColor="#D7E8EC"
+            msgr:altBackColor="#FFFFFF"
+            msgr:foreColor="#424542"
+            msgr:conversationUrl="http://settings.messenger.live.com/Conversation/IMMe.aspx?invitee=54d1e3d385733162@apps.messenger.live.com&mkt=en-US"></div>
+          <script type="text/javascript" src="http://messenger.services.live.com/users/54d1e3d385733162@apps.messenger.live.com/presence?dt=&mkt=en-US&cb=Microsoft_Live_Messenger_PresenceButton_onPresence"></script></li>
+        </ul>
+      </div>
+      <div id="contact_list">
+        <ul>
+          <li><a href="/who-we-are.html" class="cn">公司介绍</a></li>
+          <li><a href="/what-we-do.html" class="cn">服务内容</a></li>
+          <li><a href="/contact.html" class="cn">联系方法</a></li>
+		  <li><a href="/daigou.html" class="cn">奢侈品代购</a></li>
+          <li class="wechat"><p class="cn">微信:2426511060</p></li>
+          <li class="weibo"><wb:share-button count="n" type="button" size="middle" relateuid="2879335194" ></wb:share-button></li>
+        </ul>
+      </div>
+    </div>
+    
+
+
+</section>
+
+<section id="sec_slideshow" class="clearfix">
+  <div class="slideshow"></div>
+</section>
+
+<!-- Details -->
+<section id="sec_detail" class="clearfix">
+  
+    <div class="details">
+      <h4><i class="icon-pushpin"></i> 留学咨询</h4>
+      <ul>
+        
+          
+            
+              <li><a href="http://uwinhk.github.com/blog/2012/10/21/%E6%B3%95%E5%9B%BD%E7%9A%84%E9%AB%98%E7%AD%89%E5%95%86%E4%B8%9A%E4%B8%8E%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2%E4%BB%8B%E7%BB%8D.html">法国的高等商业与管理学院介绍</a></li>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <li><a href="http://uwinhk.github.com/blog/2012/09/27/2012-singapore-study-abroad.html">新加坡留学 专家预测2013年最具潜力专业!</a></li>
+            
+          
+        
+          
+            
+              <li><a href="http://uwinhk.github.com/blog/2012/09/20/study-fr1.html">fr-study 1</a></li>
+            
+          
+        
+          
+            
+              <li><a href="http://uwinhk.github.com/blog/2012/07/02/singapore.html">Singapore</a></li>
+            
+          
+        
+          
+            
+              <li><a href="http://uwinhk.github.com/blog/2012/07/02/france-test.html">2013法国留学新动向</a></li>
+            
+          
+        
+      </ul>
+    </div>
+    <div class="details">
+      <h4><i class="icon-sitemap"></i> 移民生活</h4>
+      <ul>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+    <div class="details">
+      <h4><i class="icon-bar-chart"></i> 投资方案</h4>
+      <ul>
+        
+          
+        
+          
+            
+              <li><a href="http://uwinhk.github.com/blog/2012/10/21/%E6%96%87%E5%8C%96%E7%A2%B0%E6%92%9E%E4%B9%8B%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A.html">文化碰撞之马来西亚</a></li>
+            
+          
+        
+          
+            
+              <li><a href="http://uwinhk.github.com/blog/2012/10/21/invest-sg2.html">新加坡小额投资创业移民（EntrePass）</a></li>
+            
+          
+        
+          
+            
+              <li><a href="http://uwinhk.github.com/blog/2012/10/21/invest-sg.html">新加坡投资优势</a></li>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+    <div class="details">
+      <h4><i class="icon-globe"></i> 玩转世界</h4>
+      <ul>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  
+</section>
+    </div>
+    
+    <footer>
+      &COPY2012 All Rights Reserved. Property of UWIN
+    </footer>
+  </body>
+</html>

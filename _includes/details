@@ -1,0 +1,100 @@
+{% case page.language %}
+  {% when 'chinese' %}
+    <div class="details">
+      <h4><i class="icon-pushpin"></i> 留学咨询</h4>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.function == 'study' %}
+            {% if post.language == 'chinese' %}
+              <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="details">
+      <h4><i class="icon-sitemap"></i> 移民生活</h4>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.function == 'immigration' %}
+            {% if post.language == 'chinese' %}
+              <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="details">
+      <h4><i class="icon-bar-chart"></i> 投资方案</h4>
+      <ul>
+        {% for post in site.posts  %}
+          {% if post.function == 'invest' %}
+            {% if post.language == 'chinese' %}
+              <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="details">
+      <h4><i class="icon-globe"></i> 玩转世界</h4>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.function == 'travel' %}
+            {% if post.language == 'chinese' %}
+              <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% when 'english' %}
+    <div class="details">
+      <h4><i class="icon-pushpin"></i> Information: Study abroad</h4>
+      <ul>
+        {% for post in site.posts  %}
+          {% if post.function == 'study' %}
+            {% if post.language == 'english' %}
+              <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="details">
+      <h4><i class="icon-sitemap"></i> Immigration</h4>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.function == 'immigration' %}
+            {% if post.language == 'english' %}
+              <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="details">
+      <h4><i class="icon-bar-chart"></i> Investment Strategy</h4>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.function == 'invest' %}
+            {% if post.language == 'english' %}
+              <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="details">
+      <h4><i class="icon-globe"></i> Around world</h4>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.function == 'travel' %}
+            {% if post.language == 'english' %}
+              <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+{% endcase %}

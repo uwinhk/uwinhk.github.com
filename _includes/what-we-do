@@ -1,0 +1,32 @@
+<div class="post-detail">
+  <section id="sec_company" class="clearfix">
+    {% case page.language %}
+      {% when 'english' %}
+      
+        <li><i class="icon-heart"></i> Study abroad in France </li>
+        <li><i class="icon-heart"></i> Travel around France</li>
+        <li><i class="icon-heart"></i> Study abroad in Singapore, Immigration information</li>
+        <li><i class="icon-heart"></i> Investment plan in Singapore</li>
+        <li><i class="icon-heart"></i> Travel around Singapore</li>
+        <li><i class="icon-heart"></i> Study abroad in Malaysia, Immigration information</li>
+        <li><i class="icon-heart"></i> Investment plan in Malaysia</li>
+        <li><i class="icon-heart"></i> Travel around Malaysia</li>
+	
+      {% when 'chinese' %}
+      
+        <li><i class="icon-heart"></i> 法国留学</li>
+        <li><i class="icon-heart"></i> 法国旅游</li>
+        <li><i class="icon-heart"></i> 新加坡留学/移民</li>
+        <li><i class="icon-heart"></i> 新加坡房产</li>
+        <li><i class="icon-heart"></i> 新加坡旅游</li>
+        <li><i class="icon-heart"></i> 马来西亚留学/移民</li>
+        <li><i class="icon-heart"></i> 马来西亚房产</li>
+        <li><i class="icon-heart"></i> 马来西亚旅游</li>
+   
+     {% endcase %}
+  </section>
+</div>
+
+<a href="javascript:history.go(-1)" class="goback">
+  <i class="icon-arrow-left"></i> Back
+</a>

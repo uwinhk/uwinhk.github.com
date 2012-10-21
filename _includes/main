@@ -1,0 +1,13 @@
+<!-- Latest update -->
+<section id="sec_update" class="clearfix">
+  {% include update %}
+</section>
+
+<section id="sec_slideshow" class="clearfix">
+  <div class="slideshow"></div>
+</section>
+
+<!-- Details -->
+<section id="sec_detail" class="clearfix">
+  {% include details %}
+</section>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+  <head>
+	<title>You win the world ! </title>
+		  
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=640" />
+  
+  <!-- stylesheet -->
+	<link rel="stylesheet" href="/assets/css/font-awesome-ie7.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+  <link rel="stylesheet" href="/assets/css/styleuwin.css"/>
+  
+  <!-- javascript -->
+  <script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+  <!-- weibo -->  
+  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+  <!-- slideshow -->
+  <script type="text/javascript">
+	var scrollSpeed = 15;
+	var current = 0;
+	var direction = 'h';
+	function bgscroll(){
+	    current -= 1;
+	    $('div.slideshow').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");   
+	    }
+	setInterval("bgscroll()", scrollSpeed);
+	</script>
+  </head>
+  
+  <body onload="StartMove()">
+    <header>
+      <img src="/assets/images/uwinheader2.png" width="980px"/>
+
+  <ul id="language">
+    <li><a href="/index.html"> chinese </a></li>
+    <li><a href="/en/index.html" id="english_selector"> english </a></li>
+  </ul>
+  <ul id="menu" class="en">
+    <li><a href="/en/">Home</a></li>
+    <li><a href="/en/study-fr.html">Study abroad:FR</a></li>
+    <li><a href="/en/travel-fr.html">Travel:FR</a></li>
+    <li><a href="/en/study-sg.html">Study abroad:SG</a></li>
+    <li><a href="/en/invest-sg.html">Invest:SG</a></li>
+    <li><a href="/en/travel-sg.html">Travel:SG</a></li>
+    <li><a href="/en/study-mal.html">Study abroad:MAL</a></li>
+    <li><a href="/en/invest-mal.html">Malaysia1</a></li>
+    <li><a href="/en/travel-mal.html">Malaysia2</a></li>
+    <li><a href="/en/board.html">Board</a></li>
+  </ul>
+
+    </header>
+    
+    <div id="container">
+      <div class="post-detail">
+  <section id="sec_company" class="clearfix">
+    
+      
+        <li><i class="icon-heart"></i> Study abroad in France </li>
+        <li><i class="icon-heart"></i> Travel around France</li>
+        <li><i class="icon-heart"></i> Study abroad in Singapore, Immigration information</li>
+        <li><i class="icon-heart"></i> Investment plan in Singapore</li>
+        <li><i class="icon-heart"></i> Travel around Singapore</li>
+        <li><i class="icon-heart"></i> Study abroad in Malaysia, Immigration information</li>
+        <li><i class="icon-heart"></i> Investment plan in Malaysia</li>
+        <li><i class="icon-heart"></i> Travel around Malaysia</li>
+	
+      
+  </section>
+</div>
+
+<a href="javascript:history.go(-1)" class="goback">
+  <i class="icon-arrow-left"></i> Back
+</a>
+
+  
+
+    </div>
+    
+    <footer>
+      &COPY2012 All Rights Reserved. Property of UWIN
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<div class="post-detail">
+  <section id="sec_team" class="clearfix">
+    {% case page.language %}
+      {% when 'english' %}
+        
+        <h1>who we are</h1>
+  
+        You can add 'what we do' section here.
+      {% when 'chinese' %}
+        <h1>公司介绍</h1>
+      
+        <p>香港佑盈投资顾问有限公司注册成立于香港特别行政区，公司致力于海外投资咨询，海外商
+        务旅行信息咨询以及海外置业信息咨询等业务。</p><br/>
+        <p>本公司与新加坡，马来西亚，泰国，法国及中国大陆地区等大型机构保持长期良好的合作伙
+        伴关系，为客户提供更全面，更丰富，更安全的海外咨询服务。</p><br/>
+        <p>佑盈香港竭诚期待为您提供我们优质的服务，如果您有海外投资，置业，移民学习以及商务
+        旅行等业务需求，我们秉承“诚信，诚实，诚挚”的经营原则为您提供高品质的服务。</p>
+        
+    {% endcase %}
+  </section>
+</div>
+
+<a href="javascript:history.go(-1)" class="goback">
+  <i class="icon-arrow-left"></i> Back
+</a>

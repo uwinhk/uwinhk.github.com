@@ -1,0 +1,49 @@
+---
+layout: index
+---
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+  <head>
+	<title>You win the world ! </title>
+		  
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=640" />
+  
+  <!-- stylesheet -->
+	<link rel="stylesheet" href="/assets/css/font-awesome-ie7.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+  <link rel="stylesheet" href="/assets/css/styleuwin.css"/>
+  
+  <!-- javascript -->
+  <script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+  <!-- weibo -->  
+  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+  <!-- slideshow -->
+  <script type="text/javascript">
+	var scrollSpeed = 15;
+	var current = 0;
+	var direction = 'h';
+	function bgscroll(){
+	    current -= 1;
+	    $('div.slideshow').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");   
+	    }
+	setInterval("bgscroll()", scrollSpeed);
+	</script>
+  </head>
+  
+  <body onload="StartMove()">
+    <header>
+      {% include header %}
+    </header>
+    
+    <div id="container">
+      {{ content }}
+    </div>
+    
+    <footer>
+      &COPY2012 All Rights Reserved. Property of UWIN
+    </footer>
+  </body>
+</html>

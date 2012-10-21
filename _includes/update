@@ -1,0 +1,101 @@
+{% case page.language %}
+  {% when 'english' %}
+    <div class="updates" id="latest_updates">
+      <ul class="update_study"> <h3 class="en"><i class="icon-pencil"></i> Study</h3>      
+        {% for post in site.posts %}
+          {% if post.function == 'study'%}
+            {% if post.language == 'english'%}
+              <li><a href="{{site.utl}}{{ post.url}}">{{ post.date | date: "%y-%m-%d" }} <i class="icon-comment-alt"></i> {{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <ul class="update_travel"> <h3 class="en"><i class="icon-plane"></i> Travel</h3>       
+        {% for post in site.posts %}
+          {% if post.function == 'travel'%}
+            {% if post.language == 'english'%}
+              <li><a href="{{site.utl}}{{ post.url}}">{{ post.date | date: "%y-%m-%d" }} <i class="icon-comment-alt"></i> {{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>      
+    </div>
+    
+    <div class="updates" id="social_block">
+      <div id="sns">
+        <ul>
+          <li class="qq"><a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=547f9bb017831f96d12d1ce5fb9f0b562e05d84959b8fac9"><img src="/assets/images/qq.png"></a></li>
+          <li class="msn"><script type="text/javascript" src="http://settings.messenger.live.com/controls/1.0/PresenceButton.js"></script>
+          <div
+            id="Microsoft_Live_Messenger_PresenceButton_54d1e3d385733162"
+            msgr:width="48"
+            msgr:backColor="#D7E8EC"
+            msgr:altBackColor="#FFFFFF"
+            msgr:foreColor="#424542"
+            msgr:conversationUrl="http://settings.messenger.live.com/Conversation/IMMe.aspx?invitee=54d1e3d385733162@apps.messenger.live.com&mkt=en-US"></div>
+          <script type="text/javascript" src="http://messenger.services.live.com/users/54d1e3d385733162@apps.messenger.live.com/presence?dt=&mkt=en-US&cb=Microsoft_Live_Messenger_PresenceButton_onPresence"></script></li>
+        </ul>
+      </div>
+      <div id="contact_list">
+        <ul>
+          <li><a href="{{ base.url }}/en/who-we-are.html">who we are</a></li>
+          <li><a href="{{ base.url }}/en/what-we-do.html">what we do</a></li>
+          <li><a href="{{ base.url }}/en/contact.html">contact</a></li>
+		  <li><a href="{{ base.url }}/en/daigou.html">brand</a></li>
+          <li class="wechat"><p>微信:2426511060</p></li>
+          <li class="weibo"><wb:share-button count="n" type="button" size="middle" relateuid="2879335194" ></wb:share-button></li>
+        </ul>
+      </div>
+    </div>
+
+  {% when 'chinese' %}
+    <div class="updates" id="latest_updates">
+      <ul class="update_study"> <h3 class="cn"><i class="icon-pencil"></i> 留学动向最新更新</h3>      
+        {% for post in site.posts %}
+          {% if post.function == 'study'%}
+            {% if post.language == 'chinese'%}
+              <li><a href="{{site.utl}}{{ post.url}}">{{ post.date | date: "%y-%m-%d" }} <i class="icon-comment-alt"></i> {{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <ul class="update_travel"> <h3 class="cn"><i class="icon-plane"></i> 旅游指南最新更新</h3>       
+        {% for post in site.posts %}
+          {% if post.function == 'travel'%}
+            {% if post.language == 'chinese'%}
+              <li><a href="{{site.utl}}{{ post.url}}">{{ post.date | date: "%y-%m-%d" }} <i class="icon-comment-alt"></i> {{ post.title }}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="updates" id="social_block">
+      <div id="sns">
+        <ul>
+          <li class="qq"><a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=547f9bb017831f96d12d1ce5fb9f0b562e05d84959b8fac9"><img src="/assets/images/qq.png"></a></li>
+          <li class="msn"><script type="text/javascript" src="http://settings.messenger.live.com/controls/1.0/PresenceButton.js"></script>
+          <div
+            id="Microsoft_Live_Messenger_PresenceButton_54d1e3d385733162"
+            msgr:width="48"
+            msgr:backColor="#D7E8EC"
+            msgr:altBackColor="#FFFFFF"
+            msgr:foreColor="#424542"
+            msgr:conversationUrl="http://settings.messenger.live.com/Conversation/IMMe.aspx?invitee=54d1e3d385733162@apps.messenger.live.com&mkt=en-US"></div>
+          <script type="text/javascript" src="http://messenger.services.live.com/users/54d1e3d385733162@apps.messenger.live.com/presence?dt=&mkt=en-US&cb=Microsoft_Live_Messenger_PresenceButton_onPresence"></script></li>
+        </ul>
+      </div>
+      <div id="contact_list">
+        <ul>
+          <li><a href="{{ base.url }}/who-we-are.html" class="cn">公司介绍</a></li>
+          <li><a href="{{ base.url }}/what-we-do.html" class="cn">服务内容</a></li>
+          <li><a href="{{ base.url }}/contact.html" class="cn">联系方法</a></li>
+		  <li><a href="{{ base.url }}/daigou.html" class="cn">奢侈品代购</a></li>
+          <li class="wechat"><p class="cn">微信:2426511060</p></li>
+          <li class="weibo"><wb:share-button count="n" type="button" size="middle" relateuid="2879335194" ></wb:share-button></li>
+        </ul>
+      </div>
+    </div>
+    
+
+{% endcase %}

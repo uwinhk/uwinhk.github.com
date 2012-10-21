@@ -1,0 +1,13 @@
+---
+layout: index
+---
+
+<div id="post-detail">
+<h1>{{ page.title }}</h1>
+<small>{{ page.date | date: "%Y-%m-%d" }}</small>
+  <div id="post-content">
+    {{ content }}
+  </div>
+</div>
+
+<a href="javascript:history.go(-1)" class="goback"><i class="icon-arrow-left"></i> Back </a>

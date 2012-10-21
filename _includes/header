@@ -1,0 +1,38 @@
+<img src="/assets/images/uwinheader2.png" width="980px"/>
+{% case page.language %}
+  {% when 'chinese' %}
+    <ul id="language">
+      <li><a href="{{base.path}}/index.html" id="chinese_selector"> chinese </a></li>
+      <li><a href="{{base.path}}/en/index.html"> english </a></li>
+    </ul>
+    <ul id="menu">
+      <li><a href="{{base.path}}/">首  页</a></li>
+      <li><a href="{{base.path}}/study-fr.html">法国留学</a></li>
+      <li><a href="{{site.url}}/travel-fr.html">法国旅游</a></li>
+      <li><a href="{{base.path}}/study-sg.html">新加坡留学/移民</a></li>
+      <li><a href="{{base.path}}/invest-sg.html">新加坡房产</a></li>
+      <li><a href="{{base.path}}/travel-sg.html">新加坡旅游</a></li>
+      <li><a href="{{base.path}}/study-mal.html">马来西亚留学/移民</a></li>
+      <li><a href="{{base.path}}/invest-mal.html">马来西亚房产</a></li>
+      <li><a href="{{base.path}}/travel-mal.html">马来西亚旅游</a></li>
+      <li><a href="{{base.url}}/board.html">论  坛</a></li>
+  </ul>
+
+  {% when 'english' %}
+  <ul id="language">
+    <li><a href="{{base.path}}/index.html"> chinese </a></li>
+    <li><a href="{{base.path}}/en/index.html" id="english_selector"> english </a></li>
+  </ul>
+  <ul id="menu" class="en">
+    <li><a href="{{base.path}}/en/">Home</a></li>
+    <li><a href="{{base.path}}/en/study-fr.html">Study abroad:FR</a></li>
+    <li><a href="{{base.path}}/en/travel-fr.html">Travel:FR</a></li>
+    <li><a href="{{base.path}}/en/study-sg.html">Study abroad:SG</a></li>
+    <li><a href="{{base.path}}/en/invest-sg.html">Invest:SG</a></li>
+    <li><a href="{{base.path}}/en/travel-sg.html">Travel:SG</a></li>
+    <li><a href="{{base.path}}/en/study-mal.html">Study abroad:MAL</a></li>
+    <li><a href="{{base.path}}/en/invest-mal.html">Malaysia1</a></li>
+    <li><a href="{{base.path}}/en/travel-mal.html">Malaysia2</a></li>
+    <li><a href="{{base.url}}/en/board.html">Board</a></li>
+  </ul>
+{% endcase%}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+  <head>
+	<title>You win the world ! </title>
+		  
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=640" />
+  
+  <!-- stylesheet -->
+	<link rel="stylesheet" href="/assets/css/font-awesome-ie7.css"/>
+	<link rel="stylesheet" href="/assets/css/font-awesome.css"/>
+  <link rel="stylesheet" href="/assets/css/styleuwin.css"/>
+  
+  <!-- javascript -->
+  <script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+  <!-- weibo -->  
+  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+  <!-- slideshow -->
+  <script type="text/javascript">
+	var scrollSpeed = 15;
+	var current = 0;
+	var direction = 'h';
+	function bgscroll(){
+	    current -= 1;
+	    $('div.slideshow').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");   
+	    }
+	setInterval("bgscroll()", scrollSpeed);
+	</script>
+  </head>
+  
+  <body onload="StartMove()">
+    <header>
+      <img src="/assets/images/uwinheader2.png" width="980px"/>
+
+    <ul id="language">
+      <li><a href="/index.html" id="chinese_selector"> chinese </a></li>
+      <li><a href="/en/index.html"> english </a></li>
+    </ul>
+    <ul id="menu">
+      <li><a href="/">首  页</a></li>
+      <li><a href="/study-fr.html">法国留学</a></li>
+      <li><a href="http://uwinhk.github.com/travel-fr.html">法国旅游</a></li>
+      <li><a href="/study-sg.html">新加坡留学/移民</a></li>
+      <li><a href="/invest-sg.html">新加坡房产</a></li>
+      <li><a href="/travel-sg.html">新加坡旅游</a></li>
+      <li><a href="/study-mal.html">马来西亚留学/移民</a></li>
+      <li><a href="/invest-mal.html">马来西亚房产</a></li>
+      <li><a href="/travel-mal.html">马来西亚旅游</a></li>
+      <li><a href="/board.html">论  坛</a></li>
+  </ul>
+
+  
+    </header>
+    
+    <div id="container">
+      
+    <div class="post-list">
+      <h1><i class="icon-list-ul"></i> 法国留学</h1>
+      <ul>
+        
+          
+            
+              
+              <li><a href="http://uwinhk.github.com/blog/2012/10/21/%E6%B3%95%E5%9B%BD%E7%9A%84%E9%AB%98%E7%AD%89%E5%95%86%E4%B8%9A%E4%B8%8E%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2%E4%BB%8B%E7%BB%8D.html"> 2012-10-21  &nbsp; | &nbsp; 法国的高等商业与管理学院介绍 <i class=" icon-chevron-right"></i></a></li>
+              
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+        
+          
+            
+              
+              <li><a href="http://uwinhk.github.com/blog/2012/09/20/study-fr1.html"> 2012-09-20  &nbsp; | &nbsp; fr-study 1 <i class=" icon-chevron-right"></i></a></li>
+              
+            
+          
+        
+          
+        
+          
+            
+              
+              <li><a href="http://uwinhk.github.com/blog/2012/07/02/france-test.html"> 2012-07-02  &nbsp; | &nbsp; 2013法国留学新动向 <i class=" icon-chevron-right"></i></a></li>
+              
+            
+          
+        
+      </ul>
+    </div>
+
+  
+<a href="javascript:history.go(-1)" class="goback"><i class="icon-arrow-left"></i> Back</a>
+    </div>
+    
+    <footer>
+      &COPY2012 All Rights Reserved. Property of UWIN
+    </footer>
+  </body>
+</html>

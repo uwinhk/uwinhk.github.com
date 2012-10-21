@@ -1,0 +1,24 @@
+<div class="post-detail">
+  <section id="sec_contact" class="clearfix">
+    {% case page.language %}
+      {% when 'english' %}
+  		   Shanghai, china 
+         www.uwin.hk
+      {% when 'chinese' %}
+         中国 上海
+         www.uwin.hk
+              {% case page.category %}
+                {% when 'singapore' %}
+                  <h3>{{ page.title}}</h3>
+                  <h3>{{ page.country}}</h3>
+                {% when 'france' %}
+                  <h3>{{ page.title}}</h3>
+                  <p> {{ page.content }}</p>
+            {% endcase %}
+        {% endcase %}
+  </section>
+</div>
+
+<a href="javascript:history.go(-1)" class="goback">
+  <i class="icon-arrow-left"></i> Back
+</a>
