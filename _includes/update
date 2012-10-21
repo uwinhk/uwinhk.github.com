@@ -10,9 +10,9 @@
           {% endif %}
         {% endfor %}
       </ul>
-      <ul class="update_travel"> <h3 class="en"><i class="icon-plane"></i> Travel</h3>       
+      <ul class="update_travel"> <h3 class="en"><i class="icon-plane"></i> Invest plans</h3>       
         {% for post in site.posts %}
-          {% if post.function == 'travel'%}
+          {% if post.function == 'invest' %}
             {% if post.language == 'english'%}
               <li><a href="{{site.utl}}{{ post.url}}">{{ post.date | date: "%y-%m-%d" }} <i class="icon-comment-alt"></i> {{ post.title }}</a></li>
             {% endif %}
@@ -50,7 +50,7 @@
 
   {% when 'chinese' %}
     <div class="updates" id="latest_updates">
-      <ul class="update_study"> <h3 class="cn"><i class="icon-pencil"></i> 留学动向最新更新</h3>      
+      <ul class="update_study"> <h3 class="cn"><i class="icon-pencil"></i> 留学动向</h3>      
         {% for post in site.posts %}
           {% if post.function == 'study'%}
             {% if post.language == 'chinese'%}
@@ -59,9 +59,9 @@
           {% endif %}
         {% endfor %}
       </ul>
-      <ul class="update_travel"> <h3 class="cn"><i class="icon-plane"></i> 旅游指南最新更新</h3>       
+      <ul class="update_travel"> <h3 class="cn"><i class="icon-plane"></i> 投资及置业</h3>       
         {% for post in site.posts %}
-          {% if post.function == 'travel'%}
+          {% if post.function == 'invest'%}
             {% if post.language == 'chinese'%}
               <li><a href="{{site.utl}}{{ post.url}}">{{ post.date | date: "%y-%m-%d" }} <i class="icon-comment-alt"></i> {{ post.title }}</a></li>
             {% endif %}

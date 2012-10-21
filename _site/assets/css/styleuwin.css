@@ -460,9 +460,18 @@ color: #3561B2;
 	margin-bottom: 0;
 }
 #post-detail #post-content {
+	width: 880px;
 	padding: 30px 0;
 }
-
+#post-detail #post-images{
+padding: 25px 15px;	
+}
+#post-detail #post-images img {
+	width: 270px;
+	height: 200px;
+	display: inline;
+	margin: 0 5px 10px ;
+}
 
 a.goback {
   color: #888;

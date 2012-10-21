@@ -5,7 +5,7 @@
       <ul>
         {% for post in site.posts %}
           {% if post.country == 'malaysia' %}
-            {% if post.function == 'study' %}
+            {% if post.function == 'study' or post.function == 'immigration' %}
               {% if post.language == 'chinese' %}
               <li><a href="{{site.url}}{{ post.url }}"> {{ post.date | date: "%Y-%m-%d" }}  &nbsp; | &nbsp; {{ post.title }} <i class=" icon-chevron-right"></i></a></li>
               {% endif %}
@@ -21,7 +21,7 @@
     <ul>
       {% for post in site.posts %}
         {% if post.country == 'malaysia' %}
-          {% if post.function == 'study' %}
+          {% if post.function == 'study' or post.function == 'immigration' %}
             {% if post.language == 'english' %}
             <li><a href="{{site.url}}{{ post.url }}"> {{ post.date | date: "%Y-%m-%d" }}  &nbsp; | &nbsp; {{ post.title }} <i class=" icon-chevron-right"></i></a></li>
             {% endif %}
