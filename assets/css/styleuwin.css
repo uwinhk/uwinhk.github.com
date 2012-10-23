@@ -6,6 +6,7 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 980px;
+  background: #fdd;
 }
 
 a, a:hover, a:link, a:active, a:visited {
