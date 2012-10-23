@@ -202,6 +202,7 @@ float: left;
 #sec_update #social_block {
 	padding: 0;
 	margin: 0;
+  width: 115px;
 }
 
 #sec_update #social_block #sns {
