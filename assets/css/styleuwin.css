@@ -83,10 +83,10 @@ list-style: none;
 position: relative;
 left: 1px;
 display: inline;
-font-size: 14px;
+font-size: 13px;
 margin: 0 2px;
 padding: 10px;
-top: -1px;
+top: -2px;
 }
 
 #menu.en li {
@@ -391,7 +391,7 @@ box-shadow: 0 1px 0.5px 0 #e7c748 inset;
 color: #777;
 position: relative;
 left: -2px;
-line-height: 160%;
+line-height: 140%;
 }
 #sec_detail .details ul li a{
 	color: #777;
