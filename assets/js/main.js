@@ -6,7 +6,7 @@ $(function() {
       $("#main-nav li a.main-link").removeClass("active");
       $(this).addClass("active");
       $("#sub-link-bar").animate({
-          height: "40px"
+          height: "70px"
       });
       $(".sub-links").hide();
       $(this).siblings(".sub-links").fadeIn();
