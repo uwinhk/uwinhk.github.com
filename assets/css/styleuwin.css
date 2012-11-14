@@ -82,31 +82,33 @@ border-bottom: 5px solid #eee;
 list-style: none;
 position: relative;
 left: 1px;
-display: inline;
-font-size: 13px;
+font-size: 14px;
 margin: 0 2px;
-padding: 10px;
-top: -2px;
+padding: 0 10px;
+top: -1px;
+display: inline-block;
 }
 
 #menu.en li {
 font-size: 11px;
-margin: 4px 1px;
-padding: 12px 10px 12px 10px;
+padding: 11px 10px 12px 10px;
 left: 2px;
 top: -2px;
 }
 
-#menu li:hover {
+/*#menu li:hover {
 border-top: 1px solid #e7c748;
 background: #eee;
-}
+}*/
 
 #menu li a {
   text-decoration: none;
   color: #3561B2;
 }
 
+#menu li ul.countrytab  li{
+  display: none;
+}
 /*
  * Container 
  */
@@ -152,16 +154,14 @@ overflow: hidden;
 	width: 370px;
 }
 #sec_update #latest_updates ul h3 {
-	border-bottom: 1px solid #E7C748;
+	border-bottom: 1px dotted #999;
 	margin: 5px 0;
 }
 #sec_update #latest_updates ul h3.en {
 	margin: 8px 0;
 	text-transform: uppercase;
 }
-#sec_update #latest_updates ul h3 i {
-	color: #E7C748;
-}
+
 #sec_update #latest_updates ul.update_study {
 float:left;
 left: -5px;
@@ -391,7 +391,11 @@ box-shadow: 0 1px 0.5px 0 #e7c748 inset;
 color: #777;
 position: relative;
 left: -2px;
-line-height: 140%;
+line-height: 160%;
+}
+#sec_detail .details ul li.en {
+font-size: 15px;
+line-height: 150%;
 }
 #sec_detail .details ul li a{
 	color: #777;
@@ -471,7 +475,7 @@ padding: 25px 15px;
 	width: 270px;
 	height: 200px;
 	display: inline;
-	margin: 0 3px 10px ;
+	margin: 0 5px 10px ;
 }
 
 a.goback {
@@ -580,3 +584,77 @@ footer {
 	padding: 25px;
   margin: 5px 0;
 }
+
+
+
+
+/**/
+header img {
+  z-index: 1000000000;
+  border-bottom: 1px solid #777;
+}
+#wrap {  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+}  
+
+#main-nav {
+  text-align: left;
+  min-height: 25px;
+  padding-top: 10px;
+  padding-left: 0px;
+  border-bottom: 1px solid #bbb;
+}  
+#main-handle {
+  background: #eee;
+  width: 100%;
+  float: left;
+  margin-top: -4px;  
+}  
+#main-nav li {  
+  display: inline;  
+  list-style: none;  
+}  
+#main-nav li a {  
+  margin-right: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  outline: 0;
+  position: relative;
+  top: -2px; 
+}
+
+#main-nav li a:hover, #main-nav li a.active {
+  background: #DDD;
+}
+  
+#sub-link-bar {  
+  background: #DDD;  
+  min-height: 30px;
+  border-bottom: 1px solid #e7c748;
+}
+ 
+.sub-links {
+  display: none;  
+  position: absolute;  
+  width: 100%;  
+  top: 45px;  
+  text-align: left;  
+  left: 0px;  
+}  
+#main-nav li .sub-links li a:hover,
+#main-nav li .sub-links li a:active,
+#main-nav li a.close:hover {
+  background: none;
+  color:  #3561B2;
+}  
+#main-nav li a.close{  
+  display: none;  
+  position: absolute;  
+} 
