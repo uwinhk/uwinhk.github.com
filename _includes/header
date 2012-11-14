@@ -10,9 +10,9 @@
     <div id="wrap">  
       <div id="main-handle"> 
           <ul id="main-nav">  
-            <li><a class="main-link" href="{{base.path}}/index.html">首  页</a>  
+            <li><a class="main-link" href="{{base.path}}">首  页</a>  
               <ul class="sub-links">  
-                <li><a href="{{base.path}}/index.html">首  页</a> </li>
+                <li><a href="{{base.path}}">首  页</a></li>
               </ul>  
             </li>  
             <li><a class="main-link" href="">法国</a>  
@@ -59,16 +59,51 @@
     <li><a href="{{base.path}}/index.html"> chinese </a></li>
     <li><a href="{{base.path}}/en/index.html" id="english_selector"> english </a></li>
   </ul>
-  <ul id="menu" class="en">
-    <li><a href="{{base.path}}/en/">Home</a></li>
-    <li><a href="{{base.path}}/en/study-fr.html">Study abroad:FR</a></li>
-    <li><a href="{{base.path}}/en/travel-fr.html">Travel:FR</a></li>
-    <li><a href="{{base.path}}/en/study-sg.html">Study abroad:SG</a></li>
-    <li><a href="{{base.path}}/en/invest-sg.html">Invest:SG</a></li>
-    <li><a href="{{base.path}}/en/travel-sg.html">Travel:SG</a></li>
-    <li><a href="{{base.path}}/en/study-mal.html">Study abroad:MAL</a></li>
-    <li><a href="{{base.path}}/en/invest-mal.html">Invest:MAL</a></li>
-    <li><a href="{{base.path}}/en/travel-mal.html">Travel:MAL</a></li>
-    <li><a href="{{base.url}}/en/board.html">Board</a></li>
-  </ul>
+  
+      <div id="wrap">  
+      <div id="main-handle"> 
+          <ul id="main-nav">  
+            <li><a class="main-link" href="{{base.path}}/en">Home</a>  
+              <ul class="sub-links">  
+                <li><a href="{{base.path}}/en">首  页</a> </li>
+              </ul>  
+            </li>  
+            <li><a class="main-link" href=""> France </a>  
+              <ul class="sub-links">  
+                <li><a href="{{base.path}}/en/study-fr.html">Study abroad</a> </li>  
+                <li><a href="{{base.path}}/en/travel-fr.html">Travel</a> </li>
+              </ul>  
+            </li>  
+            <li><a class="main-link" href="">Singapore</a>  
+              <ul class="sub-links">  
+                <li ><a href="{{base.path}}/en/study-sg.html">Study abroad and immigration</a> </li>  
+                <li><a href="{{base.path}}/en/invest-sg.html">Investment plan</a> </li>
+                <li><a href="{{base.path}}/en/travel-sg.html">Travel</a> </li>  
+              </ul>  
+            </li>  
+            <li><a class="main-link" href="">Malaysia</a>  
+              <ul class="sub-links">  
+                <li><a href="{{base.path}}/en/study-mal.html">Study abroad and immigration</a> </li>  
+                <li><a href="{{base.path}}/en/invest-mal.html">Investment plan</a> </li>  
+                <li><a href="{{base.path}}/en/travel-mal.html">马Travel</a></li>  
+              </ul>  
+            </li>  
+            <li><a class="main-link" href="">Thailand</a>  
+                <ul class="sub-links">  
+                <li><a href="{{base.path}}/en/feature-thai.html" title="Screencasts">Feauture of Thailand</a></li>  
+                </ul>  
+            </li>  
+            <li><a class="main-link" href="{{base.url}}/board.html">Board</a>  
+              <ul class="sub-links">  
+              <li><a href="{{base.url}}/board.html">Board</a></li>  
+              </ul>  
+
+            </li>  
+             <li><a class="close" title="Click to Collapse">X</a></li>  
+          </ul>
+        <b class="round"> <b class="round5"></b> <b class="round4"></b> <b class="round3"></b> <b class="round2"><b></b></b> <b class="round1"><b></b></b></b> </div>  
+ 
+     </div>
+     <div id="sub-link-bar"> </div>  
+
 {% endcase%}
