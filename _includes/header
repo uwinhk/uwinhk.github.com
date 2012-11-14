@@ -62,7 +62,7 @@
   
       <div id="wrap">  
       <div id="main-handle"> 
-          <ul id="main-nav">  
+          <ul id="main-nav" class="en">  
             <li><a class="main-link" href="{{base.path}}/en">Home</a>  
               <ul class="sub-links">  
                 <li><a href="{{base.path}}/en">首  页</a> </li>
