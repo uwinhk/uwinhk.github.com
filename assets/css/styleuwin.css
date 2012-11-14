@@ -629,6 +629,9 @@ header img {
   position: relative;
   top: -2px; 
 }
+#main-nav.en li a { 
+  top: -1px; 
+}
 
 #main-nav li a:hover, #main-nav li a.active {
   background: #DDD;
