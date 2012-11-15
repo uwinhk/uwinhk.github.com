@@ -10,9 +10,9 @@
     <div id="wrap">  
       <div id="main-handle"> 
           <ul id="main-nav">  
-            <li><a class="main-link" href="{{base.path}}">首  页</a>  
+            <li><a class="main-link" href="{{base.path}}/index.html">首  页</a>  
               <ul class="sub-links">  
-                <li><a href="{{base.path}}">首  页</a></li>
+                <li><a href="{{base.path}}/index.html">首  页</a></li>
               </ul>  
             </li>  
             <li><a class="main-link" href="">法国</a>  
@@ -65,7 +65,7 @@
           <ul id="main-nav" class="en">  
             <li><a class="main-link" href="{{base.path}}/en">Home</a>  
               <ul class="sub-links">  
-                <li><a href="{{base.path}}/en">首  页</a> </li>
+                <li><a href="{{base.path}}/en">Home</a> </li>
               </ul>  
             </li>  
             <li><a class="main-link" href=""> France </a>  
